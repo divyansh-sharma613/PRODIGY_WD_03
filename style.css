@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Mode Buttons */
+.mode-select button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Glow */
+.mode-select button.active {
+    background: #ff5722;
+    color: white;
+    box-shadow: 0 0 15px white, 0 0 30px rgba(255,255,255,0.7);
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    background: white;
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background: #ddd;
+}
+
+/* Winner Highlight */
+.win {
+    background: #4caf50 !important;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
